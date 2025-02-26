@@ -13,4 +13,11 @@ menu {
   margin: 0;
 }
 
+main a {
+  color: red;
+}
+main a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -38,7 +38,8 @@ function nouvellePage(){
   }
 };
 
-
-document.getElementById("coder").addEventListener("click", function() {
-  window.open("https://docs.cless.dev", "_blank");
+const bouton = document.getElementById('coder');
+bouton.addEventListener("click", function() {
+  
+  //window.open("https://docs.cless.dev", "_blank");
 });
