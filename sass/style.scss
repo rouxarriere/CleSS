@@ -1,0 +1,15 @@
+
+
+menu{
+    display: block;
+    box-sizing: border-box;
+}
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    min-height: 0;
+    text-align: center;
+    margin:0;
+}

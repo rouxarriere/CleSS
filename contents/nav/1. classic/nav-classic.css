@@ -1,0 +1,69 @@
+/************************************/
+/*                                  */
+/*  CléSS - La clef de la réussite  */
+/*        © 2024 - rouxarriere      */
+/*                                  */
+/************************************/
+
+/* NAV CLASSIC */
+
+nav{
+    font-family: 'Outfit', sans-serif;
+    border: 1px solid #666;
+    -webkit-box-shadow: 6px 7px 16px 0px rgba(0,0,0,0.81);
+    box-shadow: 6px 7px 16px 0px rgba(0,0,0,0.81);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: #bad2d2;
+    border-radius: 10px;
+    padding: 5px; /* Ajouté pour un espacement plus cohérent */
+}
+
+nav p{
+    font-size: 4rem;
+    margin:15px auto; /* Simplifié la marge */
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 0 auto;
+}
+nav a:hover{
+    color: red;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(10px);
+    margin: 15px auto;
+}
+
+nav li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav li i{
+    font-size: 25px;
+}
+
+nav li span{
+        opacity: 0;
+        transform: translateY(-20px);
+}
+
+
+nav li:hover > span {
+    opacity: 1;
+    transform: translateY(1px);
+    color: red;
+}
+img{
+    width: 35px;
+    margin: 0 auto;
+}

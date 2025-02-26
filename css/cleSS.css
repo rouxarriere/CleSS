@@ -1,0 +1,175 @@
+/************************************/
+/*                                  */
+/*  CléSS - La clef de la réussite  */
+/*        © 2024 - rouxarriere      */
+/*                                  */
+/************************************/
+/* Table des matières :
+
+
+/* GLOBAL */ 
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*,
+*::before,
+*::after
+{ /* Sélectionne tous les éléments, y compris les pseudo-éléments */
+    box-sizing: border-box; 
+    outline: none;
+	text-decoration: none;
+    transition: all 0.2s ease;
+}
+.debug{border: 1px dashed red;} /* Permet de délimiter les éléments de la page afin de comprendre leurs comportements*/
+
+html{
+    font-size: 62.5%;
+    background: rgb(241,226,211);
+    background: -moz-radial-gradient(circle, rgba(241,226,211,1) 0%, rgba(232,183,183,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(241,226,211,1) 0%, rgba(232,183,183,1) 100%);
+    background: radial-gradient(circle, rgba(241,226,211,1) 0%, rgba(232,183,183,1) 100%); 
+    font-family: "Roboto Flex", sans-serif;
+    color: #333;
+}
+html,
+body{
+    height: 100%;
+    margin: 0; /* Supprime les marges par défaut */
+}
+a{color:black;}
+a,
+a:hover,
+a:visited,
+a:active {text-decoration: none;}
+
+ul,
+li{list-style: none;}
+
+.container {
+    display: flex;
+    flex: 1;
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+.clear::after { /* Évolution ultime du .clear */
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+/* Placement des éléments */
+.left {float: left}
+.right {float: right}
+.center {
+    margin: 0 auto;
+	text-align: center;
+}
+
+.hidden { /* Cacher un élément */
+    display: none
+}
+
+/* BODY */
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+/* NAV */
+nav .textnuit {
+    position: absolute;
+    margin: 0;
+    transform: translate(45px, -35px); /* Préférez transform à translate */
+    width: 20%;
+}
+
+
+nav i{
+    font-size: 3rem;
+    padding: 5px;
+}
+/* MAIN */
+
+main h1{
+    font-size: 4rem;
+}
+main p{
+    font-size: 2rem;
+}
+
+img{
+    width: 50px;
+}
+.hidden{
+    transition: all 0.2s ease;
+}
+.wheat{
+    color: #FAEAD7;
+    background:transparent;
+}
+h1{
+    text-align: center;
+}
+button{
+    border: none;   
+    padding: 15px;
+    color: #FAEAD7;
+    background: green;
+    border-radius: 9px;
+}
+button:active{
+    transform: scale(0.9);
+}
+button:hover{
+    background: rgb(0, 107, 0);
+}
+span{
+    color: red;
+}
+.fas{
+    font-size: 5rem;
+}
+
+
+/* DARK MODE */ 
+.nuit{
+    background: #222;
+    color: #FAEAD7;
+}
+.nuit #button{
+    background:wheat;
+    color: #222;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+footer p{
+    margin: 1rem;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.719);
+}
+
+footer a:hover{
+    color: red;
+}
+@media only screen and (max-width: 724px) {
+    main h1,
+    .fas{
+        font-size: 3rem;
+    }
+
+}
