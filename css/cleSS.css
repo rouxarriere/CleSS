@@ -5,8 +5,19 @@
 /*                                  */
 /************************************/
 /* Table des matières :
+1. GLOBAL
+2. BODY
+3. NAV
+4. MAIN
+5. FOOTER
+-----------------------
+6. DARK MODE
+7. DEBUG MODE
+8. MEDIA QUERY
 
 
+
+-----------------------
 /* GLOBAL */ 
 
 /* fonts */
@@ -21,7 +32,6 @@
 	text-decoration: none;
     transition: all 0.2s ease;
 }
-.debug{border: 1px dashed red;} /* Permet de délimiter les éléments de la page afin de comprendre leurs comportements*/
 
 html{
     font-size: 62.5%;
@@ -74,7 +84,7 @@ li{list-style: none;}
     display: none
 }
 
-/* BODY */
+/* 2. BODY */
 body{
     display: flex;
     flex-direction: column;
@@ -83,7 +93,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.6;
 }
-/* NAV */
+/* 3. NAV */
 nav .textnuit {
     position: absolute;
     margin: 0;
@@ -96,7 +106,7 @@ nav i{
     font-size: 3rem;
     padding: 5px;
 }
-/* MAIN */
+/* 4. MAIN */
 
 main h1{
     font-size: 4rem;
@@ -138,27 +148,7 @@ span{
     font-size: 5rem;
 }
 
-
-/* DARK MODE */ 
-.nuit{
-    background: #222;
-    color: #FAEAD7;
-}
-.nuit #button{
-    background:wheat;
-    color: #222;
-}
-.nuit main a{
-    color:rgb(236, 179, 73);
-}
-.nuit main a:hover{
-    text-decoration: underline;
-}
-
-
-
-
-/* FOOTER */
+/* 5. FOOTER */
 footer {
     background-color: #333;
     color: #fff;
@@ -174,6 +164,49 @@ footer a{
 footer a:hover{
     color: red;
 }
+
+/* 6. DEV MENU */
+
+.dev-menu{
+    background-color:aquamarine;
+}
+/* dark Mode */ 
+.nuit{
+    background: #222;
+    color: #FAEAD7;
+}
+.nuit #button{
+    background:wheat;
+    color: #222;
+}
+.nuit main a{
+    color:rgb(236, 179, 73);
+}
+.nuit main a:hover{
+    text-decoration: underline;
+}
+
+/* Debug Mode */
+
+.dbgmode{
+    border: 0;
+    background-color: transparent;
+    color: black;
+    vertical-align: bottom;
+
+}
+.dbgmode:hover{
+    background: transparent;
+    text-decoration: underline;
+    color: green;
+}
+.clicked{
+    color:green;
+    text-decoration: underline;
+}
+
+.debug{border: 1px dashed red;} /* Permet de délimiter les éléments de la page afin de comprendre leurs comportements*/
+
 @media only screen and (max-width: 724px) {
     main h1,
     .fas{
