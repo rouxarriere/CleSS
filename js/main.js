@@ -2,7 +2,22 @@ const darkModeButton = document.getElementById('nuit');
 const body = document.body;
 
 const moon = document.querySelector('.fa-moon');
-// dark mode
+
+
+
+/* MENU */
+
+//afficher le menu
+const menu_btn = document.getElementById('deroulant');
+const panel = document.getElementById('dev-menu');
+
+menu_btn.addEventListener('click', () => {
+  menu_btn.classList.toggle('up');
+  panel.classList.toggle('affiche');
+
+});
+
+//1. dark mode
 darkModeButton.addEventListener('click', () => {
   body.classList.toggle('nuit');
   darkModeButton.classList.toggle('wheat');
@@ -12,7 +27,7 @@ darkModeButton.addEventListener('click', () => {
 
 
 
-//debug mode
+//2. debug mode
 const debug = document.getElementById('debugMode');
 const allElements = document.querySelectorAll(':not(nav):not(nav *)'); // Sélectionne tous les éléments de la page
 const menu = document.getElementsByTagName('nav');
@@ -30,7 +45,7 @@ debug.addEventListener('click', () => {
 
 
 
-//Edit text
+//3. Edit text
 const edit = document.getElementById('edit');
 const navElements = document.querySelectorAll('nav');
 let isEditable = false;
@@ -45,6 +60,10 @@ let isEditable = false;
             edit.classList.toggle('clicked');
         });
 
+
+
+
+//accès a la doc
 const bouton = document.getElementById('coder');
 bouton.addEventListener("click", () => {
   
