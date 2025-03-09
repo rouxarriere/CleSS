@@ -169,6 +169,8 @@ footer a:hover{
 
 .dev-menu{
     background-color:aquamarine;
+    display: flex;
+    align-items: center;
 }
 /* dark Mode */ 
 .nuit{
@@ -186,21 +188,22 @@ footer a:hover{
     text-decoration: underline;
 }
 
-/* Debug Mode */
+/* Buttons */
 
-.dbgmode{
+.devmode{
     border: 0;
     background-color: transparent;
     color: black;
     vertical-align: bottom;
 
 }
-.dbgmode:hover{
+.devmode:hover{
     background: transparent;
     text-decoration: underline;
     color: green;
 }
 .clicked{
+    font-weight: bold;
     color:green;
     text-decoration: underline;
 }
