@@ -75,29 +75,5 @@
 }
 
 /*END OF BUTTON*/
-/* *{
-    border: 1px dashed red;
-} */
-menu {
-  display: block;
-  box-sizing: border-box;
-}
 
-.container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-  min-height: 0;
-  text-align: center;
-  margin: 0;
-}
-
-main a {
-  color: red;
-}
-main a:hover {
-  text-decoration: underline;
-}
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=buttons.css.map */
