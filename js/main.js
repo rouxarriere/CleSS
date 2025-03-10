@@ -7,15 +7,6 @@ const moon = document.querySelector('.fa-moon');
 
 /* MENU */
 
-//afficher le menu
-const menu_btn = document.getElementById('deroulant');
-const panel = document.getElementById('dev-menu');
-
-menu_btn.addEventListener('click', () => {
-  menu_btn.classList.toggle('up');
-  panel.classList.toggle('affiche');
-
-});
 
 //1. dark mode
 darkModeButton.addEventListener('click', () => {
@@ -29,7 +20,7 @@ darkModeButton.addEventListener('click', () => {
 
 //2. debug mode
 const debug = document.getElementById('debugMode');
-const allElements = document.querySelectorAll(':not(nav):not(nav *)'); // Sélectionne tous les éléments de la page
+const allElements = document.querySelectorAll('*:not(#dev-menu):not(#dev-menu *'); // Sélectionne tous les éléments de la page
 const menu = document.getElementsByTagName('nav');
 
 debug.addEventListener('click', () => {
@@ -47,18 +38,18 @@ debug.addEventListener('click', () => {
 
 //3. Edit text
 const edit = document.getElementById('edit');
-const navElements = document.querySelectorAll('nav');
+const devMenu = document.getElementById('dev-menu'); // Correction du nom de la variable
 let isEditable = false;
 
-        edit.addEventListener('click', () => {
-            isEditable = !isEditable;
-            document.body.contentEditable = isEditable;
+edit.addEventListener('click', () => {
+  isEditable = !isEditable;
+  document.body.contentEditable = isEditable;
 
-            navElements.forEach(navElement => {
-                navElement.contentEditable = false; // La navigation reste non éditable
-            });
-            edit.classList.toggle('clicked');
-        });
+  // La navigation reste non éditable
+  devMenu.contentEditable = false;
+
+  edit.classList.toggle('clicked');
+});
 
 
 

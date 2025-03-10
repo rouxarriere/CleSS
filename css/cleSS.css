@@ -11,9 +11,8 @@
 4. MAIN
 5. FOOTER
 -----------------------
-6. DARK MODE
-7. DEBUG MODE
-8. MEDIA QUERY
+6. DEV MENU
+
 
 
 
@@ -103,9 +102,10 @@ nav .textnuit {
 
 
 nav i{
-    font-size: 3rem;
+    font-size: 15px;
     padding: 5px;
 }
+
 /* 4. MAIN */
 
 main h1{
@@ -172,17 +172,15 @@ footer a:hover{
     display: flex;
     align-items: center;
     overflow: hidden;
-    max-height: 0;
+    max-height: 25px;
     padding: 0;
     transition: max-height 0.3s ease-out 0.3s;
+}
+.dev-menu i {
+    margin-left: 5px;
+}
 
-}
-.up{
-    transform: rotate(180deg);
-}
-.affiche{
-    max-height: 50px;
-}
+
 .menu-btn{
     color: black;
     transition: transform 0.3s ease-in-out; /* Animation de rotation */
@@ -192,9 +190,8 @@ footer a:hover{
     background: #222;
     color: #FAEAD7;
 }
-.nuit #button{
-    background:wheat;
-    color: #222;
+.nuit .fa-moon{
+    color: black;
 }
 .nuit main a{
     color:rgb(236, 179, 73);
@@ -219,7 +216,6 @@ footer a:hover{
 }
 .clicked{
     font-weight: bold;
-    color:green;
     text-decoration: underline;
 }
 
