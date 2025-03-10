@@ -5,11 +5,11 @@ CléSS est un framework CSS développé en Sass. Il permet de definir les bases 
 il est encore en développement.
 
 To do List :
-- Dev Menu 
-- Buttons
+- Menu de dev 
+- assets (boutons, navbar, caroussel, etc..)
 - responsive design
-- Navbar template
-- other features...
+- template de site complet
+- autres features..
 
 
 
