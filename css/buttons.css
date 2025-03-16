@@ -1,52 +1,74 @@
 /*  SOLID */
-.button_10, .button_9, .button_8, .button_7, .button_6, .button_5, .button_4, .danger, .second, .basic {
-  border: none;
+.button_6, .button_5, .cancel, .second, .valide, .basic {
+  border: 2px solid;
   padding: 15px;
   border-radius: 9px;
   cursor: pointer;
 }
-.button_10:active, .button_9:active, .button_8:active, .button_7:active, .button_6:active, .button_5:active, .button_4:active, .danger:active, .second:active, .basic:active {
+.button_6:active, .button_5:active, .cancel:active, .second:active, .valide:active, .basic:active {
   transform: scale(0.9);
 }
 
 .basic {
-  color: #fff;
-  background: green;
+  color: #000;
+  background: #FFF;
+  border-color: #FFF;
 }
 .basic:hover {
+  background: #d1d1d1;
+  border-color: #d1d1d1;
+}
+.valide {
+  color: #fff;
+  background: green;
+  border-color: green;
+}
+.valide:hover {
   background: rgb(0, 107, 0);
+  border-color: rgb(0, 107, 0);
 }
 .second {
+  color: #fff;
   background-color: rgb(0, 230, 230);
+  border-color: rgb(0, 230, 230);
 }
 .second:hover {
   background-color: rgb(0, 184, 184);
+  border-color: rgb(0, 184, 184);
 }
-.danger {
+.cancel {
   background-color: rgb(211, 20, 20);
+  border-color: rgb(184, 17, 17);
 }
-.danger:hover {
-  background-color: rgb(192, 44, 44);
+.cancel:hover {
+  background-color: brown;
+  border-color: brown;
 }
 
 /*LIGHT*/
-.button_10_l, .button_9_l, .button_8_l, .button_7_l, .button_6_l, .button_5_l, .button_4_l, .danger_l, .second_l, .basic_l {
-  border: 2px solid grey;
+.button_6_l, .button_5_l, .cancel_l, .second_l, .valide_l, .basic_l {
+  border: 2px solid;
   padding: 15px;
   border-radius: 9px;
   background: transparent;
   cursor: pointer;
 }
-.button_10_l:active, .button_9_l:active, .button_8_l:active, .button_7_l:active, .button_6_l:active, .button_5_l:active, .button_4_l:active, .danger_l:active, .second_l:active, .basic_l:active {
+.button_6_l:active, .button_5_l:active, .cancel_l:active, .second_l:active, .valide_l:active, .basic_l:active {
   transform: scale(0.9);
 }
 
 .basic_l {
+  border-color: #999;
+}
+.basic_l:hover {
+  background: #999;
+}
+.valide_l {
   color: green;
   background: transparent;
   border: 2px solid green;
 }
-.basic_l:hover {
+.valide_l:hover {
   background: rgb(1, 94, 1);
   color: #FAEAD7;
 }
@@ -58,19 +80,19 @@
   background-color: rgb(0, 175, 175);
   color: black;
 }
-.danger_l {
+.cancel_l {
   border-color: red;
 }
-.danger_l:hover {
+.cancel_l:hover {
   background-color: brown;
 }
 /* OTHER */
-.no.basic_l, .no.second_l, .no.danger_l, .no.button_4_l, .no.button_5_l, .no.button_6_l, .no.button_7_l, .no.button_8_l, .no.button_9_l, .no.button_10_l {
+.no.basic_l, .no.valide_l, .no.second_l, .no.cancel_l, .no.button_5_l, .no.button_6_l {
   pointer-events: none;
   filter: grayscale(1);
 }
 
-.no.basic, .no.second, .no.danger, .no.button_4, .no.button_5, .no.button_6, .no.button_7, .no.button_8, .no.button_9, .no.button_10 {
+.no {
   background: grey;
 }
 

@@ -55,12 +55,7 @@ a:active {text-decoration: none;}
 ul,
 li{list-style: none;}
 
-.container {
-    display: flex;
-    flex: 1;
-    font-size: 3rem;
-    margin: 0 auto;
-}
+
 
 .clear::after { /* Évolution ultime du .clear */
 	clear: both;
@@ -153,6 +148,9 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 footer p{
     margin: 1rem;

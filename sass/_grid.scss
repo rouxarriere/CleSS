@@ -1,0 +1,38 @@
+//Grid v1.0 | © 2025 - CléSS
+
+.grid_layout{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    & div{
+        margin: 0 auto;
+    }
+}
+
+
+// Size
+.one{
+    width: 100%;
+    background-color: red;
+}
+.two{
+    width: 50%;
+    background-color: blue;
+}
+.three{
+    width: 33.3333333333%;
+    background-color: green;
+}
+.four{
+    width: 25%;
+    background-color: orange;
+}
+.five{
+    width: 20%;
+    background-color: blueviolet;
+}
+.six{
+    width: 16.6666666666%;
+    background-color: cadetblue;
+}
