@@ -178,11 +178,6 @@ footer a:hover{
     margin-left: 5px;
 }
 
-
-.menu-btn{
-    color: black;
-    transition: transform 0.3s ease-in-out; /* Animation de rotation */
-}
 /* dark Mode */ 
 .nuit{
     background: #222;
