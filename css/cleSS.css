@@ -166,7 +166,6 @@ footer a:hover{
 /* 6. DEV MENU */
 
 .dev-menu{
-    background-color:aquamarine;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -183,10 +182,14 @@ footer a:hover{
     background: #222;
     color: #FAEAD7;
 }
+.nuit .dev-menu button,
+.nuit .dev-menu i{
+    color: #FAEAD7; 
+}
 .nuit .fa-moon{
     color: black;
 }
-.nuit main a{
+.nuit a{
     color:rgb(236, 179, 73);
 }
 .nuit main a:hover{
